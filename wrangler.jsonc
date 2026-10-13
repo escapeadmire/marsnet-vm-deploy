@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "marsnet-vm-deploy",
+  "compatibility_date": "2026-10-12",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "vm-deploy.mars-net.ca",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./public"
+  }
+}

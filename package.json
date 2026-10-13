@@ -1,0 +1,14 @@
+{
+  "name": "marsnet-vm-deploy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Public installer and Cloudflare-hosted setup page for MarsNet Ubuntu VMs.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.149.0"
+  }
+}
