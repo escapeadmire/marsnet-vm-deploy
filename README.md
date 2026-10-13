@@ -8,7 +8,7 @@ Use a normal sudo-capable Ubuntu user, not `root`. Download and review the publi
 
 ```bash
 curl -fsSLo /tmp/marsnet-vm-install.sh https://vm-deploy.mars-net.ca/install.sh
-less /tmp/marsnet-vm-install.sh
+cat /tmp/marsnet-vm-install.sh
 bash /tmp/marsnet-vm-install.sh
 ```
 
