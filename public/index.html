@@ -3,14 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#101820">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <title>MarsNet VM Setup</title>
     <style>
+      @font-face {
+        font-family: "JetBrains Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "JetBrains Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+      }
       :root {
         color-scheme: dark;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #101820;
-        color: #edf2f4;
+        font-family: "JetBrains Mono", "Courier New", monospace;
+        background: #000000;
+        color: #bfe9ff;
       }
 
       body {
@@ -22,43 +37,44 @@
       }
 
       .eyebrow {
-        color: #7dd3a7;
+        color: #3f8ed6;
         font-size: 0.8rem;
         font-weight: 700;
         letter-spacing: 0.12em;
         text-transform: uppercase;
       }
 
-      h1 { margin: 8px 0; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.1; }
-      h2 { margin-top: 32px; font-size: 1.15rem; }
-      p, li { color: #bfccd3; }
+      h1 { margin: 8px 0; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.1; color: #bfe9ff; }
+      h2 { margin-top: 32px; font-size: 1.15rem; color: #5aa9ff; border-bottom: 1px solid #5aa9ff; padding-bottom: 6px; }
+      p, li { color: #bfe9ff; }
 
       code, pre {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-family: "JetBrains Mono", "Courier New", monospace;
       }
 
       pre {
         overflow-x: auto;
         padding: 18px;
-        border: 1px solid #31414d;
-        border-radius: 10px;
-        background: #18232c;
-        color: #d9f99d;
+        border: 1px solid #5aa9ff;
+        background: #10233a;
+        color: #bfe9ff;
         font-size: 0.9rem;
       }
 
-      a { color: #7dd3a7; }
-      .warning { border-left: 3px solid #e9b44c; padding-left: 14px; }
+      a { color: #ff8a3d; }
+      a:hover { color: #bfe9ff; }
+      .warning { border-left: 3px solid #ff8a3d; padding: 8px 0 8px 14px; }
       .button {
         display: inline-block;
         margin: 8px 0;
         padding: 10px 15px;
-        border-radius: 7px;
-        background: #7dd3a7;
-        color: #101820;
+        border: 1px solid #5aa9ff;
+        background: #10233a;
+        color: #5aa9ff;
         font-weight: 700;
         text-decoration: none;
       }
+      .button:hover { background: #ff8a3d; border-color: #ff8a3d; color: #000000; }
     </style>
   </head>
   <body>
